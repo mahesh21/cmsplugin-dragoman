@@ -3,7 +3,8 @@ from dragoman_blog.model_bases import BaseEntry, BaseEntryTranslation
 from cms.models.fields import PlaceholderField
 
 class Entry(BaseEntry):
-    
+
+    intro = PlaceholderField('intro',related_name="Intro text")
     placeholder = PlaceholderField('dragoman_placeholder')
 
     class Meta:
